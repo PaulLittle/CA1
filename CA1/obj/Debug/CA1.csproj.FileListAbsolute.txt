@@ -1,0 +1,14 @@
+G:\BSc_in_Software_Development\FOOP\Practice\CA1\CA1\bin\Debug\CA1.exe.config
+G:\BSc_in_Software_Development\FOOP\Practice\CA1\CA1\bin\Debug\CA1.exe
+G:\BSc_in_Software_Development\FOOP\Practice\CA1\CA1\bin\Debug\CA1.pdb
+G:\BSc_in_Software_Development\FOOP\Practice\CA1\CA1\obj\Debug\CA1.csprojResolveAssemblyReference.cache
+G:\BSc_in_Software_Development\FOOP\Practice\CA1\CA1\obj\Debug\MainWindow.g.cs
+G:\BSc_in_Software_Development\FOOP\Practice\CA1\CA1\obj\Debug\App.g.cs
+G:\BSc_in_Software_Development\FOOP\Practice\CA1\CA1\obj\Debug\CA1_MarkupCompile.cache
+G:\BSc_in_Software_Development\FOOP\Practice\CA1\CA1\obj\Debug\CA1_MarkupCompile.lref
+G:\BSc_in_Software_Development\FOOP\Practice\CA1\CA1\obj\Debug\MainWindow.baml
+G:\BSc_in_Software_Development\FOOP\Practice\CA1\CA1\obj\Debug\CA1.g.resources
+G:\BSc_in_Software_Development\FOOP\Practice\CA1\CA1\obj\Debug\CA1.Properties.Resources.resources
+G:\BSc_in_Software_Development\FOOP\Practice\CA1\CA1\obj\Debug\CA1.csproj.GenerateResource.Cache
+G:\BSc_in_Software_Development\FOOP\Practice\CA1\CA1\obj\Debug\CA1.exe
+G:\BSc_in_Software_Development\FOOP\Practice\CA1\CA1\obj\Debug\CA1.pdb
