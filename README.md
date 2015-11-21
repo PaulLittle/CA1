@@ -17,3 +17,7 @@ At the bottom of the screen, provide a % figure for occupancy i.e. the percentag
 Provide a figure for the percentage of guests that checked in before noon (i.e. after mid-night but before noon).
 Use some styling to decorate your UI.
 Employ the most effective, efficient coding approaches you have been taught, for maximum marks.
+
+## 21/11/2015
+
+updated version using ObervableCollection but forgot how to use dockpanel!! reverted to grid

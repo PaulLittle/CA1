@@ -14,16 +14,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CA1
+namespace CA1._2
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        const short NO_ROOMS = 20;
-
-        private ObservableCollection<Room> _hotel = new ObservableCollection<Room>();
+        private ObservableCollection<Room> hotel = new ObservableCollection<Room>();
 
         public MainWindow()
         {
@@ -32,34 +30,35 @@ namespace CA1
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            for (int i = 0; i < NO_ROOMS; i++)
+            for (int i = 0; i < 20; i++)
             {
-                _hotel.Add(new Room(i+1));
+                hotel.Add(new Room());
                 System.Threading.Thread.Sleep(350);
             }
-            lbxRooms.ItemsSource = _hotel;
-            updateStats();
-        }
-
-        private void updateStats()
+            lbxRooms.ItemsSource = hotel;
+            upDateStats();
+        }        
+        
+        private void upDateStats()
         {
-            int noGuests = 0, noBeforeNoon = 0;
-            foreach (var rm in _hotel)
+            int noGuests = 0, beforeNoon = 0;
+            foreach (var rm in hotel)
             {
                 if (!String.IsNullOrEmpty(rm.Guest))
                 {
                     noGuests++;
-                    if (rm.CheckIn.Hour > 0 && rm.CheckIn.Hour < 12) noBeforeNoon++;
+                    if (rm.CheckIn.Hour > 0 && rm.CheckIn.Hour < 12) beforeNoon++;
                 }
             }
-            tbkOccupancy.Text = String.Format("{0:P1}", (double)noGuests / _hotel.Count);
-            tbkBeforeNoon.Text = String.Format("{0:P1}", (double)noBeforeNoon / _hotel.Count);
+
+            tbkOccupancy.Text = String.Format("{0:P1}",(double) noGuests / hotel.Count);
+            tbkBeforeNoon.Text = String.Format("{0:P1}",(double) beforeNoon / hotel.Count);
         }
 
         private void btnAddRoom_Click(object sender, RoutedEventArgs e)
         {
-            _hotel.Add(new Room(_hotel.Count+1));
-            updateStats();
+            hotel.Add(new Room());
+            upDateStats();
         }
     }
 }
